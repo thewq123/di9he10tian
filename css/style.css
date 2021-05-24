@@ -1,0 +1,601 @@
+html {
+    font-size: 10px;
+}
+body {
+    position: relative;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+}
+input, textarea {
+    outline: none;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /*兼容IE低版本*/
+}
+ul {
+    list-style: none;
+}
+header {
+    height: 160rem;
+    width: 100%;
+}
+header img {
+    position: relative;
+    width: 100%;
+    height: 99rem;
+    z-index: -999;
+}
+
+
+.center_label  {
+    position: absolute;
+    top: 20.8rem;
+    left: 1.7rem;
+    color: #fff;
+}
+.center_label h1 {
+    font-size: 6.2rem;
+    text-align: center;
+    margin-bottom: 8.8rem;
+}
+.center_label .itme {
+    text-align: center;
+    margin-bottom: 16.6rem;
+    font-size: 2rem;
+}
+.center_label .take {
+    position: absolute;
+    left: 24rem;
+    border: 1px solid #ccc;
+    height: 24.8rem;
+    width: 97rem;
+    text-align: center;
+} 
+.center_label .take h3 {
+    margin-top: 6.1rem;
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+}
+.center_label .take p {
+    margin-bottom: 4.3rem;
+    color: #64615f;
+    font-size: 1.2rem;
+}
+.center_label .take a {
+    display: inline-block;
+    width: 29.1rem;
+    margin-left: 3.2rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 4.9rem;
+    font-size: 1.4rem;
+    color: #64615f;
+}
+.center_label .take a:hover {
+    font-size: 1.6rem;
+    color: #fff;
+}
+.center_label .take .le {
+    margin-left: 3.2rem;
+}
+.center_label .take .le button {
+    padding: 1.6rem 3.5rem;
+    background-color: #fff;
+    height: 5.2rem;
+    width: 12.6rem;
+    border: 0;
+    border-radius: 0.9rem;
+}
+
+/* read区域 */
+.read {
+    position: absolute;
+    top: 99rem;
+    width: 100%;
+    height: 71.3rem;
+    color: #141414;
+    /* background-color: #bfa; */
+}
+.read .section {
+    margin-top: 9.1rem;
+    text-align: center;
+}
+.read .section h2 {
+    margin-top: 3.7rem;
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+/* 小图片 */
+.pic {
+    position: relative;
+    height: 26.8rem;
+    width: 102.6rem;
+    margin-top: 9.6rem;
+    margin-left: 28.9rem;
+}
+.pic img {
+    float: left;
+    margin-right: 3.5rem;
+    margin-bottom: 5.5rem;
+}
+
+.pic div:nth-child(1) {
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-right: 16.9rem;
+}
+.pic div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 51rem;
+}
+.pic div:nth-child(3) {
+    position: absolute;
+    top: 16.7rem;
+    left: 0;
+    margin-right: 16.9rem;
+}
+.pic div:nth-child(4) {
+    position: absolute;
+    top: 16.7rem;
+    left: 51rem;
+    margin-right: 16.9rem;
+}
+/* 点 */
+.dian {
+    position: absolute;
+    top: 114rem;
+    right: 61.2rem;
+    z-index: 999;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    /* background-color: red; */
+}
+/* 大图片区 */
+.big_pic {
+    position: relative;
+    height: 80rem;
+    width: 100%;
+    margin-top: 9.2rem;
+    color: #fff;
+}
+.big_pic img {
+    z-index: -999;
+    height: 80rem;
+    width: 100%;
+}
+.big_pic .left {
+    position: absolute;
+    top: 11.7rem;
+    left: 28rem;
+    width: 50.9rem;
+    /* height: 41.1rem; */
+    /* background-color: pink; */
+}
+.big_pic .left h2 {
+    font-size: 4.2rem;
+    margin-bottom: 10.2rem;
+}
+.big_pic .left p {
+    display: block;
+    width: 37.2rem;
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+}
+.big_pic .left button {
+    float: left;
+    border: 1px solid #6b726e;
+    width: 23.9rem;
+    height: 6.6rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+.big_pic .left button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.big_pic .left .button1 {
+    margin-right: 3rem;
+}
+/* 646 602 589 545 176 136*/
+.big_pic .right {
+    position: absolute;
+    top: 10.2rem;
+    right: 0;
+    width: 64.6rem;
+    height: 60.2rem;
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-top-left-radius: 12%;
+    border-bottom-left-radius: 12%;
+    /* background-color: pink; */
+    color: #000;
+}
+
+.big_pic .right div:nth-child(1){
+    position: relative;
+    width: 58.9rem;
+    height: 54.5rem;
+    margin-left: 5.7rem;
+    margin-top: 2.8rem;
+    background-color: #fff;
+}
+.big_pic .right h2 {
+    font-size: 4.2rem;
+    margin-left: 40rem;
+    padding-top: 7.1rem;
+}
+.big_pic .right p {
+    font-size: 1.6rem;
+    margin-left: 38.1rem;
+    margin-top: 2.3rem;
+    margin-bottom: 7.2rem;
+}
+.big_pic .right img {
+    width: 17.6rem;
+    height: 13.6rem;
+}
+.big_pic .right .ziliao1 {
+    width: 17.6rem;
+    height: 24.7rem;
+    margin-left: 5.8rem;
+    border: 1px solid #ccc;
+    /* background-color: pink; */
+}
+.big_pic .right .ziliao1 h4 {
+    font-size: 2.8rem;
+    margin: 1.4rem auto;
+    margin-left: 3rem;
+    margin-bottom: 2.4rem;
+}
+.big_pic .right .ziliao1 span {
+    display: block;
+    margin-top: -2rem;
+    margin-left: 3rem;
+    padding-bottom: 2.8rem;
+}
+.big_pic .right .ziliao2 {
+    position: absolute;
+    top: 24.4rem;
+    left: 26rem;
+    overflow: hidden;
+    width: 17.6rem;
+    height: 24.7rem;
+    display: block;
+    border: 1px solid #ccc;
+    /* background-color: pink; */
+}
+.big_pic .right .ziliao2 h4 {
+    font-size: 2.8rem;
+    margin: 1.4rem auto;
+    margin-left: 3rem;
+    margin-bottom: 2.4rem;
+}
+.big_pic .right .ziliao2 span {
+    display: block;
+    margin-top: -2rem;
+    margin-left: 3rem;
+    padding-bottom: 2.8rem;
+}
+.big_pic .right .ziliao3 {
+    position: absolute;
+    top: 24.4rem;
+    left: 46.2rem;
+    overflow: hidden;
+    width: 12.6rem;
+    height: 24.7rem;
+    border: 1px solid #ccc;
+    /* background-color: pink; */
+}
+.big_pic .right .ziliao3 h4 {
+    font-size: 2.8rem;
+    margin: 1.4rem auto;
+    margin-left: 3rem;
+    margin-bottom: 2.4rem;
+}
+.big_pic .right .ziliao3 span {
+    display: block;
+    margin-top: -2rem;
+    margin-left: 3rem;
+    padding-bottom: 2.8rem;
+}
+.big_pic .right .ziliao3 img {
+    width: 12.6rem;
+    height: 13.6rem;
+}
+
+
+/* awesome区域 */
+.awesome {
+    border-bottom: 1px solid #ccc;
+    height: 176.1rem;
+    width: 100%;
+    /* background-color: #bfa; */
+}
+.awesome .top {
+    position: relative;
+    text-align: center;
+    padding-top: 10.6rem;
+    margin: 0 31.5rem 0 32.9rem;
+    height: 58.2rem;
+    font-size: 1.6rem;
+}
+.awesome .top h1 {
+    clear: both;
+    margin-bottom: 10.6rem;
+    font-size: 4.2rem;
+    text-align: center;
+}
+.awesome .top div {
+    float: left;
+    width: 25.7rem;
+    font-weight: normal;
+}
+
+.awesome .top div:nth-child(2) {
+    position: absolute;
+    left: 31.5rem;
+ }
+.awesome .top div:nth-child(3) {
+   float: right;
+}
+.awesome .bottom {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #ccc;
+    /* background-color: pink; */
+    font-size: 1.6rem;
+}
+.awesome .bottom .box {
+    width: 98.2rem;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: skyblue; */
+}
+.awesome .bottom .box h4 {
+    font-size: 2rem;
+}
+/* 第一个div里的div */
+.awesome .bottom .box div:nth-child(1) img {
+    float: left;
+    margin-right: 9.7rem;
+    margin-top: 11.6rem;
+}
+/* 第二个div */
+.awesome .bottom .box div:nth-child(1) h4 {
+    display: block;
+    padding-top: 19.2rem;
+    padding-bottom: 4rem;
+}
+.awesome .bottom .box div:nth-child(2) img {
+    float: right;
+    margin-left: 9.7rem;
+    margin-top: 11.6rem;
+}
+.awesome .bottom .box div:nth-child(2) h4 {
+    display: block;
+    padding-top: 26.2rem;
+    padding-bottom: 4rem;
+}
+
+/* crew全体员工区 */
+.crew {
+    margin: 0 auto;
+    margin-top: rem;
+    height: 108.5rem;
+    width: 97rem;
+    /* background-color: blue; */
+}
+.crew li {
+    float: left;
+    font-size: 1.8rem;
+}
+.crew h2 {
+    padding-top: 10rem;
+    padding-bottom: 3.7rem;
+    font-size: 4.2rem;
+    text-align: center;
+}
+.crew p {
+    text-align: center;
+    margin-bottom: 7.3rem;
+}
+/* 470 341 */
+.crew ul li {
+    position: relative;
+    width: 47rem;
+    height: 34.1rem;
+}
+.crew ul li img {
+    width: 100%;
+    height: 100%;
+}
+.crew ul li .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 隐藏之术 */
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.crew ul li:hover .mask {
+    display: block;
+}
+.crew ul li .mask h4 {
+    margin-top: 8.8rem;
+    font-size: 3.79rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+.crew ul li .mask p {
+    margin-top: 1rem;
+    color: #ccc;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+.crew ul li .mask span {
+    display: block;
+    height: 5.8rem;
+    margin-left: 11.1rem;
+    margin-top: 4rem;
+}
+.crew ul li .mask span img {
+    width: 5.4rem;
+    height: 100%;
+}
+.crew ul li .mask span .tupian {
+    margin: 0 2.8rem;
+}
+.crew ul li:nth-child(2) {
+    float: right;
+}
+.crew ul li:nth-child(3) {
+    margin-top: 3.2rem;
+}
+.crew ul li:nth-child(4) {
+    float: right;
+    margin-top: 3.2rem;
+}
+
+/* 联系方式区 */
+.contacts {
+    position: relative;
+    height: 70rem;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    /* background-color: pink; */
+}
+.contacts .left {
+    margin-top: 7.2rem;
+    margin-left: 25.5rem;
+    width: 47.1rem;
+    height: 55.9rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.contacts .left h4 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 4.7rem;
+    font-size: 1.6rem;
+
+}
+.contacts .left form {
+    width: 37rem;
+    height: 41.1rem;
+    margin: 0 auto;
+}
+.contacts .left form input,
+textarea,
+button {
+    width: 100%;
+}
+.contacts .left form input {
+    height: 5.2rem;
+}
+.contacts .left form .input2{
+    margin: 3.2rem 0;
+}
+.contacts .left form textarea {
+    resize: none;
+    height: 14.5rem;
+    margin-bottom: 3.2rem;
+}
+.contacts .left form button {
+    height: 5.2rem;
+    background-color: #000;
+    color: #fff;
+}
+/* 右边 */
+.contacts .right {
+    position: absolute;
+    top: 15rem;
+    right: 32.8rem;
+    width: 25.8rem;
+    /* height: 39.2rem; */
+    /* background-color: #bfa; */
+    font-size: 1.6rem;
+}
+.contacts .right h2 {
+    font-size: 4.2rem;
+    margin-bottom: 3.8rem;
+}
+.contacts .right p {
+    color: #979797;
+    margin-bottom: 7.2rem;
+}
+.contacts .right img {
+    margin-right: 2rem;
+}
+.contacts .right span {
+    width: 23rem;
+    /* display: inline-block; */
+}
+.contacts .right .it1 {
+    padding-bottom: 4rem;
+}
+.contacts .right .it2 {
+    margin-bottom: 4rem;
+}
+
+/* footer区域 */
+footer {
+    position: relative;
+    height: 41.3rem;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+footer .say {
+    margin-top: 8.8rem;
+    margin-left: 21.3rem;
+    /* background-color: #bfa; */
+    line-height: 5.2rem;
+}
+footer a {
+    color: #fff;
+}
+footer div {
+    float: left;
+    margin-left: 12.8rem;
+}
+footer div:nth-child(4) {
+    float: right;
+    padding-right: 12.8rem;
+}
+footer .simg {
+    position: absolute;
+    top: 26rem;
+    right: 30.6rem;
+    /* background-color: pink; */
+}
+footer .simg img {
+    margin-left: 1.8rem;
+}
+
+
+
+
+
+
+
+
